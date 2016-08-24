@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0}
+        body{background-color: aqua}
+        #aa{
+            width: 800px;
+            height: 600px;
+            position: relative;
+            margin: 10px auto;
+            background-color: white;
+            overflow: hidden;
+        }
+        .ball{
+            width: 10px;
+            height: 10px;
+            border:3px solid black;
+            background-color: chartreuse;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+//    ballX=Math.floor(Math.random()*800);
+//    ballY=Math.floor(Math.random()*600);
+//    directX=2;
+//    directY=2;
+//
+//
+//    var div=document.createElement("div");
+//            div.id="aa";
+//            document.body.appendChild(div);
+//    for(i=0;i<200;i++){
+//        var ball=document.createElement("div");
+//        ball.className="ball";
+//        div.appendChild(ball);
+//        ballX+=directX;
+//        ballY+=directY;
+//        ball.style.top=ballY+'px';
+//        ball.style.left=ballX+'px';
+//    };
+//    function ballMove(){
+//        ballX+=directX;
+//        ballY+=directY;
+//        ball.style.top=ballY+'px';
+//        ball.style.left=ballX+'px';
+//    }
+//    var i=setInterval("ballMove()",10);
+
+//    (function () {
+//
+//        var div=document.createElement("div");
+//        div.id="aa";
+//        document.body.appendChild(div);
+//
+//        var i;
+//        var a=Math.floor(Math.random()*800);
+//        var b=Math.floor(Math.random()*600);
+////        var c=1; var d=1;
+////        a+=c;b+=d;
+//
+//        for(i=0;i<200;i++){
+//            var ball=document.createElement("div");
+//            ball.className="ball";
+//
+//            div.appendChild(ball);
+//        };
+//
+//        ball.style.top=b+"px";
+//        ball.style.left=a+"px";
+////        var times=setInterval(function () {
+////
+////        },1000);
+//
+//
+//
+//
+////        var c=Math.floor(Math.random())*Math.random()+"deg";
+//
+//
+//
+//
+//    })();
+
+    (function () {
+
+        var div=document.createElement("div");
+        div.id="aa";
+        document.body.appendChild(div);
+
+        var i;
+
+        for(i=0;i<200;i++){
+//            var arr=[];
+
+            var ball=document.createElement("div");
+            ball.className="ball";
+            div.appendChild(ball);
+//            arr.push(ball);
+//            console.log(arr[i]);
+            var x=Math.floor(Math.random()*800);
+            var y=Math.floor(Math.random()*600);
+//            var ball0=ball[i];
+            ball.style.left=x+"px";
+            ball.style.top=y+"px";
+
+        }
+
+
+//        ball.style.top=x+"px";
+        var func=function (X,Y,speed,direction) {
+            this.X=X;
+            this.Y=Y;
+            this.direction=direction;
+            this.speed=speed;
+        };
+        var xx=Math.floor(Math.random()*800);
+        var yy=Math.floor(Math.random()*600);
+        var spee=Math.floor(Math.random()*10);
+        var dir=Math.floor(Math.random()*360)+"deg";
+
+        var func1=new func(xx,yy,spee,dir);
+//        console.log(func1);
+
+
+        var balls=document.querySelectorAll('#aa .ball');
+        var id=setInterval(function () {
+             x++;y++;
+
+            balls.style.left=x+"px";
+            ball.style.top=y+"px";
+            if (x>1000||y>1000){
+                clearInterval(id);
+            };
+
+        },20);
+
+    })();
+</script>
+</html>
