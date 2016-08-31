@@ -1,0 +1,28 @@
+#box{
+    background-color: #f1a899;
+}
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.q{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+.aa{
+    width: 50px;
+    height: 50px;
+}
+.c{background-color: chocolate;}
+.d{background-color:gold;}
+.e{background-color:indianred;}
+.f{background-color:#dad55e;}
+.g{background-color:palegreen;}
+.h{background-color: dodgerblue}
