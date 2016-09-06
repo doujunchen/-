@@ -1,0 +1,122 @@
+*{margin: 0;text-decoration: none;}
+#header{
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+}
+#header .center{
+    margin: 0 auto;
+    height: 100%;
+    width: 1240px;
+}
+#header .center .left{
+    width: 230px;
+    height: 130px;
+    float: left;
+}
+#header .center .left a{
+    background: url(images/public-spr.png) no-repeat 0px -170px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#header .center .right{
+     height: 100%;
+     width: 1010px;
+     float: left;
+    padding-left: 0;
+ }
+#header .center .right li{
+    height: 100%;
+    width: 144px;
+    cursor: pointer;
+}
+#header .center .right li h5{
+    color: #e1e1e1;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    height: 45px;
+}
+#header .center .right li p{
+    color: #575757;
+    text-align: center;
+    font-size: 9px;
+}
+#second{
+    width: 1349px;
+    height: 585px;
+}
+#second .center1 .fight{
+    height:50px;
+    margin-bottom: 10px;
+    color:#00ab88;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+}
+#second .center1 .see{
+    display: block;
+    width: 155px;
+    height: 36px;
+    border: 2px solid #05ad8d;
+    text-align: center;
+    line-height: 36px;
+    background: #000;
+    background: rgba(0,0,0,0.65);
+    font-size: 14px;
+    font-weight: bold;
+    color: #1bf6cc;
+    margin-top: 60px;
+}
+#second .center1 .div2{
+    background: url(images/public-spr.png) no-repeat 0 -472px;
+    height: 115px;
+    cursor: pointer;
+}
+#second .center1 .div2 a h4{
+    font-size:16px;
+    color:white;
+}
+#second .center1 .div2 a{
+    width: 112px;
+    height: 100px;
+    padding-top: 15px;
+    text-align: center;
+}
+#second .center1 .div2 a i{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;}
+#second .center1 .div2 a .i1{
+    background: url(images/public-spr.png) no-repeat 0 0;
+}
+#second .center1 .div2 a .i2{
+    background: url(images/public-spr.png) no-repeat -40px 0;
+}
+#second .center1 .div2 a .i3{
+    background: url(images/public-spr.png) no-repeat -80px 0;
+}
+#second .center1 .div2 a .i4{
+    background: url(images/public-spr.png) no-repeat -120px 0;
+}
+#second .center1 .div2 a .i5{
+    background: url(images/public-spr.png) no-repeat -160px 0;
+}
+.phospan{
+    float: left;
+    width: 156px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+.phospan:hover{
+    color: #fff;
+    background: #36AB87;
+    font-weight: bold;
+}
