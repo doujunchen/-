@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        #canvas{
+        background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="600"></canvas>
+</body>
+<script>
+    var mycanvas=document.getElementById("canvas");
+    var otex=mycanvas.getContext("2d");
+
+//    otex.save();
+//    otex.beginPath();
+//    otex.fillStyle="green";
+//    otex.arc(300,300,150,0,360*Math.PI/180);
+//    otex.fill();
+//    otex.closePath();
+//    otex.restore();
+
+//    otex.save();
+//    otex.beginPath();
+//    otex.fillStyle="red";
+//    otex.arc(300,300,150,0,45*Math.PI/180);
+//    otex.fill();
+//    otex.closePath();
+//    otex.restore();
+//
+//    otex.save();
+//    otex.beginPath();
+//    otex.fillStyle="yellow";
+//    otex.arc(300,300,150,45*Math.PI/180,135*Math.PI/180);
+//    otex.fill();
+//    otex.closePath();
+//    otex.restore();
+
+
+    otex.save();
+    otex.translate(100,100);
+    otex.beginPath();
+    otex.fillStyle="green";
+    otex.arc(0,0,50,0,120*Math.PI/180,true);
+    otex.save();
+    otex.rotate(120*Math.PI/180);
+    otex.moveTo(50,0);
+    otex.lineTo(0,0);
+    otex.restore();
+    otex.rotate(0);
+    otex.lineTo(50,0);
+    otex.closePath();
+    otex.fill();
+    otex.restore();
+
+    otex.save();
+    otex.translate(100,100);
+    otex.beginPath();
+    otex.fillStyle="red";
+    otex.arc(0,0,50,0,45*Math.PI/180);
+    otex.save();
+    otex.rotate(45*Math.PI/180);
+    otex.moveTo(50,0);
+    otex.lineTo(0,0);
+    otex.restore();
+    otex.rotate(0);
+    otex.lineTo(50,0);
+    otex.closePath();
+    otex.fill();
+    otex.restore();
+
+    otex.save();
+    otex.translate(100,100);
+    otex.beginPath();
+    otex.fillStyle="yellow";
+    otex.arc(0,0,50,45*Math.PI/180,120*Math.PI/180);
+    otex.save();
+    otex.rotate(120*Math.PI/180);
+    otex.moveTo(50,0);
+    otex.lineTo(0,0);
+    otex.restore();
+    otex.rotate(45*Math.PI/180);
+    otex.lineTo(50,0);
+    otex.closePath();
+    otex.fill();
+    otex.restore();
+
+
+</script>
+</html>

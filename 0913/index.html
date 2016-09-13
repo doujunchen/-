@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        /*#canvas{*/
+            /*background-color: red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="600"></canvas>
+</body>
+<script>
+    var mycanvas=document.getElementById("canvas");
+    var otex=mycanvas.getContext("2d");
+
+    otex.save();
+    otex.beginPath();
+    otex.strokeStyle="#cd2e3e";
+    otex.lineWidth=50;
+    otex.arc(300,300,250,0,360*Math.PI/180);
+    otex.stroke();
+    otex.closePath();
+    otex.restore();
+
+    otex.save();
+    otex.beginPath();
+    otex.strokeStyle="white";
+    otex.lineWidth=50;
+    otex.arc(300,300,200,0,360*Math.PI/180);
+    otex.stroke();
+    otex.closePath();
+    otex.restore();
+
+    otex.save();
+    otex.beginPath();
+    otex.strokeStyle="#cd2e3e";
+    otex.lineWidth=50;
+    otex.arc(300,300,150,0,360*Math.PI/180);
+    otex.stroke();
+    otex.closePath();
+    otex.restore();
+
+    otex.save();
+    otex.beginPath();
+    otex.fillStyle="#02468d";
+    otex.arc(300,300,125,0,360*Math.PI/180);
+    otex.fill();
+    otex.closePath();
+    otex.restore();
+
+
+    otex.save();
+    otex.beginPath();
+    otex.strokeStyle="black";
+    otex.fillStyle="white";
+    otex.moveTo(300,175);
+    for(var i=0;i<12;i=i+2){
+//             半径             度数        弧度          圆心
+        var ox=125*Math.cos(i*72*Math.PI/180-Math.PI/2)+300;
+        var oy=125*Math.sin(i*72*Math.PI/180-Math.PI/2)+300;
+        otex.lineTo(ox,oy);
+    }
+    otex.stroke();
+    otex.fill();
+    otex.closePath();
+    otex.restore();
+</script>
+</html>
