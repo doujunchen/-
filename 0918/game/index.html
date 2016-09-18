@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{padding: 0;margin: 0}
+        canvas{
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="400" height="400"></canvas>
+<script>
+    var canvas=document.getElementById("canvas");
+    var mycanvas=canvas.getContext("2d");
+
+    function rect(ox,oy,wid,hei,color) {
+        mycanvas.beginPath();
+        mycanvas.fillStyle=color;
+        mycanvas.rect(ox,oy,wid,hei);
+        mycanvas.fill();
+        mycanvas.closePath();
+    }
+    var text="0";
+    var movefrom=0;
+    var moveto=90;
+
+    rect(movefrom,300,50,100,"black");
+    rect(moveto,300,50,100,"black");
+    rect(movefrom+30,280,20,20,"red");
+
+    mycanvas.beginPath();
+    mycanvas.fillStyle="white";
+    mycanvas.font = "40px 宋体";
+    mycanvas.fillText(text,200,30);
+    mycanvas.fill();
+    mycanvas.closePath();
+</script>
+</body>
+</html>

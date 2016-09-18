@@ -32,29 +32,40 @@
         line(300,900,i*40+80,i*40+80);
         write(200-i*20,250,i*40+80);
     }
-    function draw(ohgt) {
-        for (var i=0;i<12;i++){
-            var owidth=39;
-            var oheight=ohgt[i]*2;
+
+        function draw(ohgt) {
+            var qwe=setInterval(function () {
+                for (var i=0;i<12;i++){
+                    var owidth=39;
+                    var ran = Math.random()*2;
+                    var oheight=ohgt[i]*ran;
 //    当前坐标在哪  （当前距离要加上上一个的距离）     lineto的300
-            var ox=10*(i+1)+300+i*owidth;
-            var oy=480-oheight;
-            drawrect(ox,oy,owidth,oheight);
-            write((i+1)+"月",ox+10,500)
+                    var ox=10*(i+1)+300+i*owidth;
+                    var oy=480-oheight;
+                    drawrect(ox,oy,owidth,oheight);
+                    write((i+1)+"月",ox+10,500);
+                }
+            },200);
+//            if()
         }
-    }
-    function  drawrect(ox,oy,owidth,oHeight) {
-        mycanvas.beginPath();
-        mycanvas.fillStyle = "aqua";
-        mycanvas.strokeStyle="black";
-        mycanvas.rect(ox,oy,owidth,oHeight);
+        function  drawrect(ox,oy,owidth,oHeight) {
+            mycanvas.beginPath();
+            mycanvas.fillStyle = "aqua";
+//        mycanvas.strokeStyle="black";
+            mycanvas.rect(ox,oy,owidth,oHeight);
 //        mycanvas.moveTo(ox,oy);
-        mycanvas.lineTo(ox,oy);
-        mycanvas.closePath();
-        mycanvas.fill();
-        mycanvas.stroke();
-    }
-    draw(arr);
+//        mycanvas.lineTo(ox,oy);
+            mycanvas.closePath();
+            mycanvas.fill();
+//        mycanvas.stroke();
+        }
+        draw(arr);
+//    if(oheight>){
+//        clearInterval(qwe)
+//    }
+
+
+
 
 //    function linemove(ox,oy,px,py) {
 //        mycanvas.beginPath();
