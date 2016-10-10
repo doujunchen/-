@@ -1,0 +1,40 @@
+*{margin:0;padding:0;font-family: "微软雅黑";list-style:none;text-decoration: none;}
+html{font-size: 16px;}
+body{background: #f7f7f7;max-width: 640px;  min-width: 320px;  margin: 0 auto;}
+.header{width: 100%;height:8%;max-width: 640px;  min-width: 320px;margin: 0 auto;
+    background: #e4366b;text-align: center;position: fixed;top: 0;z-index: 2;}
+.header span{color: #fff;line-height: 2.6;font-size: 1.3rem;}
+.content{position: relative;padding: 8% 0 9%}
+.content .search-container{position: fixed;z-index: 2;top:8%;height: 9%;width: 100%;
+    background-color:#333;max-width: 640px;  min-width: 320px;}
+.content .search-container div{background-color: #fff;height: 62%;width: 85%;box-sizing: border-box;
+    margin: 13px auto 0;border-radius: 10px;padding-left: 7%;overflow: hidden;position: relative}
+#search-btn{display: block;position: absolute;width: 10%;height: 87%;left: 2%;
+    top:8%;background: url("../images/search.jpg") left top no-repeat;}
+#oinput{line-height: 3;width: 85%;border:none;outline: none;position: absolute;right: 0;height: 100%}
+/*@media screen and (max-width: 769px) {#oinput {}}*/
+.footer{width: 100%;height: 9%;max-width: 640px;  min-width: 320px;background: #484850;
+    margin: 0 auto;position: fixed;bottom: 0;}
+.content .swiper-container{margin: 0 auto;position: relative;overflow: hidden;width: 100%;height: 30%;top:1.8rem}
+.content .swiper-container .swiper-wrapper{position: relative;width: 100%;height: 100%;display: flex}
+.content .swiper-container .swiper-wrapper .swiper-slide{height:16rem;overflow: hidden;background-color: #ccc;}
+.content .swiper-container .swiper-wrapper .swiper-slide img{display:block;width: 100%;padding-top: 2rem;
+    max-height: 24rem;height: 25rem}
+.list-item{margin-top: 28px;margin-bottom: 26px;}
+.list-item li{border-bottom: 1px solid #ccc;padding: 8px 10px;overflow: hidden;}
+.list-item li .shop-pic{float: left;margin-right: 10px;}
+.list-item li .shop-pic a img{display: block;width: 90px;height: 90px;}
+.list-item li .shop-txt h3{line-height: 22px;font-size: 16px;position: relative;padding-right: 0;}
+.list-item li .shop-txt h3 a{color: #444}
+.list-item li .shop-txt .pirce{color: #e4366b;font-weight: bold}
+.list-item li .shop-txt .pirce span{margin-left: 20px;font-weight: normal;  color: #aaa;
+    text-decoration: line-through;}
+.list-item li .shop-txt .discount{color: #666;line-height: 24px;position: relative;}
+.list-item li .shop-txt .discount img{width:60px;position:absolute;right:5px;top:-5px;}
+
+
+
+
+
+
+
