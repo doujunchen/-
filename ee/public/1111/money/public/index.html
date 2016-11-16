@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<form id="push">
+    <div>
+        <label>
+            名字：
+            <input type="text" required="required" name="name">
+        </label>
+    </div>
+    <div>
+        <label>
+            日期：
+            <input type="date" name="date" required="required">
+        </label>
+    </div>
+    <div>
+        <label>
+            数额：
+            <input type="number" required="required" name="amount">
+        </label>
+    </div>
+    <div>
+        <label>
+            是否还清：
+            <input type="number" required="required" name="boole">
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="保存" name="save">
+    </div>
+</form>
+
+<form id="show">
+    <table>
+        <thead>
+        <tr>
+            <th>名字</th>
+            <th>日期</th>
+            <th>欠钱数额</th>
+            <th>是否还清</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="trs">
+            <td class="name">王晓岁</td>
+            <td class="date">2016-11-11</td>
+            <td class="amount">10000</td>
+            <td class="boole">否</td>
+            <td class=""><input type="button" value="删除" name="delete"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+<script src="index.js"></script>
+</body>
+</html>

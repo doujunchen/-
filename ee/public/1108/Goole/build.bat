@@ -1,0 +1,1 @@
+java -jar tools\closure-compiler-v20160713.jar --compilation_level ADVANCED --js_output_file main.min.js --js Main.js

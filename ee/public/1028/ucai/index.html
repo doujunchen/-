@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+
+    <link rel="stylesheet/less" href="style.less">
+    <script src="lib/js/less.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-xs-8 top-brand-container">
+            <div id="top-brand">
+                    <a href="#" class="a-1"></a>
+                    <a href="#" class="a-2"></a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-2">
+            <nav id="phone-nav-hidden">
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">在职提升</a></li>
+                    <li><a href="#">就业培训</a></li>
+                    <li><a href="#">云课堂<span class="caret"></span></a></li>
+                    <li><a href="#">社区</a></li>
+                </ul>
+            </nav>
+
+
+            <nav class="navbar-header" id="phone-nav-button-show">
+                <button type="button" class="btn btn-danger collapsed glyphicon glyphicon-align-justify navbar-left"
+                        data-toggle="collapse" data-target="#phone-nav-show"></button>
+            </nav>
+
+            <nav id="phone-nav-show" class="collapse">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">在职提升</a></li>
+                    <li><a href="#">就业培训</a></li>
+                    <li><a href="#">云课堂<span class="caret"></span></a></li>
+                    <li><a href="#">社区</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+        <div class="col-sm-2 col-xs-2">
+            <ul class="nav nav-pills navbar-right top-nav-login" role="tablist">
+                <li><a href="#"><img src="images/info_act.png"  class="img-responsive" alt="Responsive image"></a></li>
+                <li><a href="#"><img src="images/middle.jpg"  class="img-responsive img-circle" alt="Responsive image"></a></li>
+            </ul>
+        </div>
+
+        <hr>
+    </div>
+</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/banner7.jpg"  class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/banner-3.jpg"  class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/banner-2.jpg"  class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/banner-1.jpg"  class="img-responsive" alt="Responsive image">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container">
+    <ul class="nav nav-justified">
+       <li class="qwe">
+           <h4>在线学习平台</h4>
+           <p>最热门的全站直播课程</p>
+       </li>
+        <li class="qwe">
+           <h4>能力评估系统</h4>
+           <p>先进的的自动化评估系统</p>
+       </li>
+        <li class="qwe">
+           <h4>讲师顾问团队</h4>
+           <p>集结业界一线专家大牛</p>
+       </li>
+        <li class="col-xs-2 qwe">
+           <h4>开办信息一览</h4>
+           <p>最新最热专业马上开班</p>
+       </li>
+        <li class="qwe">
+           <h4>优才校区分布</h4>
+           <p>八大教学基地辐射全国</p>
+       </li>
+
+    </ul>
+</div>
+
+<script src="lib/js/jquery-3.1.1.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
